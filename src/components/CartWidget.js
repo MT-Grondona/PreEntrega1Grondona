@@ -1,10 +1,11 @@
+import { Link } from "react-router-dom"
+
 function CartWidget() {
   return (
-    <div>
-
-      <img src="/carrito.png" style={{width: "30px", height: "30px"}} alt="carrito" />
-      <p>1</p>
-    </div>
+    <Link to='/carrito'>
+    <img src="/carrito.png" style={{width: "30px", height: "30px"}} alt="carrito" />
+      <span>1</span>
+    </Link>
   )
 }
 

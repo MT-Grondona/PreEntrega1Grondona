@@ -1,16 +1,22 @@
+import { BrowserRouter } from 'react-router-dom';
 import Navbar from './components/Navbar';
+import Toogle from './components/Toogle';
 import ItemsListContainer from './components/ItemsListContainer';
+import Footer from './components/Footer'
+import ItemDetailContainer from './components/ItemDetailContainer';
+
+
 
 function App() {
 let greeting= "Maria"
 
   return (
-    <>
+    <BrowserRouter>
       <Navbar></Navbar>
-      <h1 className="h1 py-4 text-center font-semibold">Te damos la bienvenida a nuestra tienda</h1>
+      <Toogle></Toogle>
       <ItemsListContainer greeting={greeting}></ItemsListContainer>
-
-    </>
+      <Footer></Footer>
+    </BrowserRouter>
   );
 }
 

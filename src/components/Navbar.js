@@ -1,17 +1,15 @@
+import Navlinks from "./Navlinks"
+import { Link } from "react-router-dom"
 
-import CartWidget from "./CartWidget"
+
 
 function Navbar() {
     return (
         <>
-            <div id="navbar" className="navbar flex justify-between py-6 px-10 bg-slate-800 text-white">
-            <h1>Solo te quiero dulce</h1>
-            <a href="#">Inicio</a>
-            <a href="#">Nosotros</a>
-            <a href="#">Tienda</a>
-            <a href="#">Contacto</a>
-            <CartWidget></CartWidget>
-            </div>
+            <Link to="/" id="navbar" className="navbar flex justify-between p-2 bg-slate-800 text-white">
+            <h2 className="font-semibold font-sans">Solo te quiero dulce</h2>
+            <Navlinks></Navlinks>
+            </Link>
         </>
     )
 }
